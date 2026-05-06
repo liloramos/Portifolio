@@ -1,9 +1,11 @@
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #f5f7fb;
+  color: #24302d;
   background:
-    radial-gradient(circle at top, rgba(56, 189, 248, 0.28), transparent 30%),
-    linear-gradient(160deg, #06131f 0%, #0e1c2f 55%, #13263f 100%);
+    linear-gradient(rgba(71, 107, 120, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(71, 107, 120, 0.08) 1px, transparent 1px),
+    linear-gradient(145deg, #f7f1e7 0%, #eef2ed 45%, #e8ddd0 100%);
+  background-size: 44px 44px, 44px 44px, auto;
   line-height: 1.5;
   font-weight: 400;
 }

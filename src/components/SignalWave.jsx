@@ -1,86 +1,105 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, Line, OrbitControls, Sparkles, Trail } from "@react-three/drei";
-function OrbitalSignal() {
-  const orbRef = useRef(null);
-  const orbitRef = useRef(null);
-  const points = new Array(120).fill(null).map((_, index) => {
-    const angle = (index / 120) * Math.PI * 2;
-    const radius = 2.2 + Math.sin(angle * 3) * 0.16;
+import { Float, Line, OrbitControls, Sparkles } from "@react-three/drei";
 
-    return [Math.cos(angle) * radius, Math.sin(angle) * radius * 0.55, 0];
-  });
+function BlueprintProcess() {
+  const groupRef = useRef(null);
 
   useFrame((state, delta) => {
     const elapsed = state.clock.getElapsedTime();
 
-    if (orbitRef.current) {
-      orbitRef.current.rotation.z += delta * 0.18;
-      orbitRef.current.rotation.x = Math.sin(elapsed * 0.5) * 0.22;
-    }
-
-    if (orbRef.current) {
-      orbRef.current.position.x = Math.cos(elapsed * 1.1) * 2.1;
-      orbRef.current.position.y = Math.sin(elapsed * 2) * 0.82;
-      orbRef.current.position.z = Math.sin(elapsed * 1.4) * 0.4;
+    if (groupRef.current) {
+      groupRef.current.rotation.z = Math.sin(elapsed * 0.35) * 0.05;
+      groupRef.current.rotation.y += delta * 0.08;
     }
   });
 
+  const gridLines = [];
+  for (let i = -4; i <= 4; i += 1) {
+    gridLines.push({
+      key: `h-${i}`,
+      points: [
+        [-4, i * 0.45, 0],
+        [4, i * 0.45, 0],
+      ],
+    });
+    gridLines.push({
+      key: `v-${i}`,
+      points: [
+        [i * 0.65, -2, 0],
+        [i * 0.65, 2, 0],
+      ],
+    });
+  }
+
   return (
     <>
-      <ambientLight intensity={1.3} />
-      <pointLight color="#60a5fa" intensity={20} position={[0, 0, 4]} />
-      <pointLight color="#38bdf8" intensity={10} position={[-3, 2, 1]} />
+      <ambientLight intensity={1.35} />
+      <directionalLight color="#fff7ed" intensity={2.2} position={[0, 3, 4]} />
+      <pointLight color="#8fb3a0" intensity={9} position={[-2.8, 1.6, 2]} />
+      <pointLight color="#c08f5d" intensity={8} position={[2.6, -1.8, 2.5]} />
 
-      <group ref={orbitRef}>
-        <Line
-          color="#60a5fa"
-          lineWidth={1.4}
-          points={points}
-          transparent
-          opacity={0.7}
-        />
-        <mesh rotation={[0.9, 0.4, 0]}>
-          <torusGeometry args={[1.4, 0.028, 16, 100]} />
-          <meshStandardMaterial
-            color="#bfdbfe"
-            emissive="#60a5fa"
-            emissiveIntensity={0.85}
-            metalness={0.75}
-            roughness={0.22}
-          />
-        </mesh>
-      </group>
-
-      <Float floatIntensity={0.9} rotationIntensity={0.2} speed={2}>
-        <Trail
-          attenuation={(width) => width}
-          color="#93c5fd"
-          length={5}
-          local
-          width={0.8}
-        >
-          <mesh ref={orbRef}>
-            <sphereGeometry args={[0.22, 32, 32]} />
-            <meshStandardMaterial
-              color="#e0f2fe"
-              emissive="#60a5fa"
-              emissiveIntensity={1.4}
-              metalness={0.4}
-              roughness={0.1}
+      <Float floatIntensity={0.45} rotationIntensity={0.14} speed={1.2}>
+        <group ref={groupRef} rotation={[-0.58, 0, 0]}>
+          {gridLines.map((line) => (
+            <Line
+              color="#8fb3a0"
+              key={line.key}
+              lineWidth={0.6}
+              opacity={0.28}
+              points={line.points}
+              transparent
             />
-          </mesh>
-        </Trail>
+          ))}
+
+          <Line
+            color="#476b78"
+            lineWidth={2.4}
+            points={[
+              [-2.6, -1.2, 0.04],
+              [2.45, -1.2, 0.04],
+              [2.45, 1.15, 0.04],
+              [-2.6, 1.15, 0.04],
+              [-2.6, -1.2, 0.04],
+            ]}
+          />
+          <Line
+            color="#c08f5d"
+            lineWidth={2}
+            points={[
+              [-1.45, -1.2, 0.08],
+              [-1.45, 1.15, 0.08],
+              [0.15, 1.15, 0.08],
+              [0.15, -1.2, 0.08],
+            ]}
+          />
+          <Line
+            color="#8a6f4d"
+            lineWidth={1.8}
+            points={[
+              [0.15, -0.2, 0.1],
+              [2.45, -0.2, 0.1],
+            ]}
+          />
+          <Line
+            color="#8fb3a0"
+            lineWidth={1.8}
+            points={[
+              [-2.1, 0.52, 0.1],
+              [-0.15, 0.52, 0.1],
+            ]}
+          />
+        </group>
       </Float>
 
       <Sparkles
-        color="#bfdbfe"
-        count={90}
-        noise={1.6}
-        opacity={0.9}
-        scale={[7, 3.4, 4]}
-        size={2.2}
-        speed={0.4}
+        color="#f0c28f"
+        count={42}
+        noise={1.4}
+        opacity={0.65}
+        scale={[6.8, 3.2, 2.8]}
+        size={1.7}
+        speed={0.22}
       />
     </>
   );
@@ -91,21 +110,22 @@ function SignalWave() {
     <div className="signal-wave-card">
       <div className="signal-wave-copy">
         <p className="signal-wave-kicker">Painel visual</p>
-        <h3>Campo de sinal</h3>
+        <h3>Planta, modelo e documentacao</h3>
         <p>
-          Um fechamento mais visual para a pagina, mantendo a mesma identidade
-          futurista do restante da interface.
+          Um espaco visual para reforcar o foco da Larissa em transformar
+          informacao tecnica em projeto organizado, bonito e pronto para ser
+          apresentado.
         </p>
       </div>
 
       <div className="signal-wave-canvas">
         <Canvas camera={{ fov: 34, position: [0, 0, 7.4] }} dpr={[1, 1.5]}>
-          <color attach="background" args={["#071120"]} />
-          <fog attach="fog" args={["#071120", 5, 12]} />
-          <OrbitalSignal />
+          <color attach="background" args={["#f3efe7"]} />
+          <fog attach="fog" args={["#f3efe7", 5, 12]} />
+          <BlueprintProcess />
           <OrbitControls
             autoRotate
-            autoRotateSpeed={0.4}
+            autoRotateSpeed={0.25}
             enablePan={false}
             enableZoom={false}
           />

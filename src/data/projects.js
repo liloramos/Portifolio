@@ -1,20 +1,38 @@
 export const projects = [
   {
-    name: "Projetos academicos de back-end",
-    tag: "Back-end",
+    name: "Residencia unifamiliar em BIM",
+    tag: "Revit",
     description:
-      "Projetos desenvolvidos com Node.js e NestJS, integracao com MySQL, uso de Docker no ambiente e apoio visual com Bootstrap e Figma.",
+      "Espaco reservado para um projeto residencial com plantas, cortes, fachadas, modelo 3D e pranchas tecnicas produzidas no Revit.",
   },
   {
-    name: "Experiencia com software SaaS",
-    tag: "NestJS + Angular",
+    name: "Projeto academico completo",
+    tag: "Engenharia Civil",
     description:
-      "Resumo da experiencia em ambiente profissional com manutencao evolutiva, trabalho em equipe e contato com uma stack moderna.",
+      "Case para reunir memoria de calculo, desenhos tecnicos, estudos de implantacao e apresentacao final do trabalho academico.",
   },
   {
-    name: "Relatorios e sistemas legados",
-    tag: "Java",
+    name: "Compatibilizacao de disciplinas",
+    tag: "BIM",
     description:
-      "Experiencia com Java legado, Eclipse, Jasper e iReport na geracao de relatorios e no suporte a sistemas existentes.",
+      "Apresentacao de um fluxo de revisao entre arquitetura, estrutura e instalacoes, destacando interferencias e decisoes de projeto.",
+  },
+  {
+    name: "Detalhamento e documentacao",
+    tag: "Pranchas",
+    description:
+      "Area pensada para mostrar detalhes construtivos, cortes ampliados, tabelas, quantitativos e padroes graficos de entrega.",
+  },
+  {
+    name: "Estudos volumetricos",
+    tag: "Modelagem 3D",
+    description:
+      "Modelos exploratorios para testar implantacao, volumetria, relacao com o terreno, circulacao e leitura espacial.",
+  },
+  {
+    name: "Portfolio de trabalhos academicos",
+    tag: "Em breve",
+    description:
+      "Bloco preparado para receber os muitos projetos que serao enviados depois, mantendo a pagina pronta para crescer.",
   },
 ];

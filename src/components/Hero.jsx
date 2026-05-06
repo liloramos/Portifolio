@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import profilePhoto from "../../minha foto de perfil.jpeg";
+import profilePhoto from "../../foto de perfil larissa.png";
 import MiniSignalStrip from "./MiniSignalStrip";
 import TechCore from "./TechCore";
 
@@ -99,11 +99,11 @@ function Hero({ profile }) {
             <p className="spotlight-label">Localizacao</p>
             <strong>{profile.location}</strong>
             <p className="spotlight-copy">
-              Estudante de Engenharia de Software construindo uma carreira com
-              foco em back-end, aprendizado continuo e entregas consistentes.
+              Projetista BIM em construcao de carreira, com foco em Revit,
+              documentacao tecnica e apresentacoes de projeto bem resolvidas.
             </p>
             <a className="hero-link" href="#projetos">
-              Ver projetos em destaque
+              Ver projetos do portfolio
             </a>
           </motion.div>
         </div>

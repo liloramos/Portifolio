@@ -35,13 +35,13 @@ const particleOptions = {
   },
   particles: {
     color: {
-      value: ["#60a5fa", "#93c5fd", "#38bdf8"],
+      value: ["#c08f5d", "#8fb3a0", "#476b78"],
     },
     links: {
-      color: "#60a5fa",
+      color: "#476b78",
       distance: 140,
       enable: true,
-      opacity: 0.18,
+      opacity: 0.12,
       width: 1,
     },
     move: {
@@ -63,8 +63,8 @@ const particleOptions = {
     },
     opacity: {
       value: {
-        min: 0.12,
-        max: 0.4,
+        min: 0.08,
+        max: 0.28,
       },
     },
     shape: {

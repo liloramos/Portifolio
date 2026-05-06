@@ -39,7 +39,7 @@ function App() {
           <MotionSection className="panel panel-highlight" id="sobre">
             <SectionTitle
               eyebrow="Objetivo"
-              title="Um inicio profissional com direcao clara"
+              title="Projetos civis com clareza, cuidado e metodo"
             />
             <p>{profile.objective}</p>
             <p>{profile.about}</p>
@@ -48,8 +48,8 @@ function App() {
 
           <MotionSection className="panel">
             <SectionTitle
-              eyebrow="Resumo"
-              title="Pontos fortes que ajudam a contar sua historia logo de cara"
+              eyebrow="Diferenciais"
+              title="Uma projetista em formacao com repertorio para crescer"
             />
 
             <div className="highlight-grid">
@@ -65,8 +65,8 @@ function App() {
           <MotionSection className="panel panel-grid">
             <div className="info-block">
               <SectionTitle
-                eyebrow="Experiencia"
-                title="Vivencia profissional"
+                eyebrow="Trajetoria"
+                title="Experiencias e frentes de projeto"
               />
 
               <div className="timeline">
@@ -114,7 +114,7 @@ function App() {
           <MotionSection className="panel" id="habilidades">
             <SectionTitle
               eyebrow="Habilidades"
-              title="Tecnologias e competencias que sustentam o perfil"
+              title="Ferramentas e competencias para projetos BIM"
             />
 
             <div className="skills-layout">
@@ -136,7 +136,7 @@ function App() {
           <MotionSection className="panel" id="projetos">
             <SectionTitle
               eyebrow="Projetos"
-              title="Uma base inicial para evoluir em cases mais concretos"
+              title="Estrutura pronta para receber os cases do portfolio"
             />
 
             <div className="project-grid">
@@ -148,8 +148,8 @@ function App() {
 
           <MotionSection className="panel">
             <SectionTitle
-              eyebrow="Visual final"
-              title="Um fechamento mais marcante para a pagina"
+              eyebrow="Processo BIM"
+              title="Do modelo ao desenho tecnico"
             />
             <SignalWave />
           </MotionSection>
