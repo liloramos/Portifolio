@@ -330,13 +330,38 @@
   font-size: 0.96rem;
 }
 
-.signal-wave-canvas {
+.signal-wave-canvas,
+.sketchfab-embed-wrapper {
   height: 320px;
   margin-top: 16px;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(71, 107, 120, 0.14);
   background: #f3efe7;
+}
+
+.sketchfab-embed-wrapper {
+  height: auto;
+}
+
+.sketchfab-frame {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+.sketchfab-credit {
+  max-width: none;
+  padding: 10px 12px;
+  font-size: 0.82rem;
+  color: rgba(29, 39, 36, 0.78);
+  background: rgba(255, 250, 242, 0.9);
+}
+
+.sketchfab-credit a {
+  color: #765531;
+  font-weight: 700;
 }
 
 .hero-spotlight {
@@ -657,7 +682,8 @@
     height: 220px;
   }
 
-  .signal-wave-canvas {
+  .signal-wave-canvas,
+  .sketchfab-frame {
     height: 240px;
   }
 
@@ -772,7 +798,8 @@
   }
 
   .tech-core-canvas,
-  .signal-wave-canvas {
+  .signal-wave-canvas,
+  .sketchfab-frame {
     height: 200px;
   }
 }
