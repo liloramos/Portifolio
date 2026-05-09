@@ -3,7 +3,7 @@ function MiniSignalStrip() {
     <div className="mini-signal-strip" aria-hidden="true">
       <div className="mini-signal-head">
         <span className="mini-signal-dot" />
-        <span className="mini-signal-label">Modo tatico</span>
+        <span className="mini-signal-label">Modo tático</span>
       </div>
 
       <div className="mini-signal-screen">

@@ -1,34 +1,36 @@
 export const profile = {
-  kicker: "Portfolio profissional",
+  kicker: "Portfólio profissional",
   name: "Murilo Cesar Ramos Melo",
-  role: "Desenvolvedor Junior",
-  location: "Anapolis - GO",
+  role: "Desenvolvedor Júnior",
+  location: "Anápolis - GO",
   objective:
-    "Busco oportunidade como Desenvolvedor Junior ou Estagiario na area de Tecnologia.",
+    "Busco oportunidade como Desenvolvedor Junior ou Estagiário na área de Tecnologia, com foco em PHP/Laravel e React.",
   summary:
-    "Estudante de Engenharia de Software com foco em back-end, trabalhando principalmente com JavaScript, Node.js, NestJS, Python e MySQL.",
+    "Estudante de Engenharia de Software em transição para desenvolvimento web moderno, estudando PHP, Laravel, React e integração de IA com WhatsApp para automação de atendimento.",
   about:
-    "Tenho experiencia com desenvolvimento de sistemas, manutencao de software e trabalho em equipe. Sou organizado, aprendo rapido e gosto de evoluir na pratica, construindo solucoes e entendendo bem o problema antes de sair codando.",
+    "Tenho experiência com desenvolvimento de sistemas, manutenção de software e trabalho em equipe. Atualmente estou adaptando meu portfólio para refletir projetos reais como um assistente virtual inteligente para o Restaurante Sol, construindo soluções com PHP, Laravel e React enquanto aprendo na prática.",
   skills: [
     "JavaScript",
     "Node.js",
     "NestJS",
-    "Angular",
+    "React",
+    "PHP",
+    "Laravel",
     "MySQL",
     "Docker",
   ],
   heroFacts: [
     {
       label: "Foco",
-      value: "Back-end com NestJS e MySQL",
+      value: "PHP/Laravel, React e IA aplicada",
     },
     {
       label: "Contexto",
-      value: "Software house e solucoes SaaS",
+      value: "Automação de atendimento e soluções de CRM",
     },
     {
       label: "Diferencial",
-      value: "Organizacao e facilidade para aprender",
+      value: "Aprendizado rápido com projetos reais",
     },
   ],
   contacts: [
@@ -45,59 +47,59 @@ export const profile = {
     {
       label: "LinkedIn",
       value: "linkedin.com/in/murilocramoss",
-      href: "https://linkedin.com/in/murilocramoss",
+      href: "https://linkedin.com/in/murilocramos",
     },
     {
       label: "GitHub",
-      value: "Adicionar GitHub",
-      href: "#projetos",
+      value: "https://github.com/liloramos",
+      href: "https://github.com/liloramos",
     },
   ],
   highlights: [
     {
-      title: "Base tecnica em back-end",
+      title: "Sistema de atendimento inteligente",
       description:
-        "Vivencia com JavaScript, Node.js, NestJS, Python e banco de dados relacionais em estudos e projetos.",
+        "Desenvolvimento de um assistente virtual para Restaurante Sol que usa IA e WhatsApp para conversas naturais sem menus fixos.",
     },
     {
-      title: "Vivencia profissional inicial",
+      title: "Atualização para PHP e React",
       description:
-        "Experiencia com desenvolvimento, manutencao de sistemas e apoio em demandas tecnicas do dia a dia.",
+        "Construção do portfólio com foco em PHP, Laravel e React, mostrando a evolução técnica em stacks modernas.",
     },
     {
       title: "Perfil contratavel",
       description:
-        "Perfil comprometido, atento aos detalhes e com muita vontade de crescer na area.",
+        "Perfil comprometido, atento aos detalhes e com muita vontade de crescer na área.",
     },
   ],
   experience: [
     {
       company: "SYSOK",
-      role: "Desenvolvedor (Estagio)",
-      location: "Anapolis - GO",
+      role: "Desenvolvedor (Estágio)",
+      location: "Anápolis - GO",
       period: "2023 - 2023",
       description:
-        "Estagio com participacao em atividades de desenvolvimento e apoio tecnico.",
+        "Estágio com participação em atividades de desenvolvimento e apoio técnico.",
       bullets: [
         "Desenvolvimento com JavaScript, PHP, HTML e CSS.",
-        "Aplicacao de logica de programacao em solucoes praticas.",
-        "Elaboracao de diagramas de casos de uso.",
-        "Trabalho em equipe na resolucao de demandas.",
-        "Apoio em atividades tecnicas e manutencao de sistemas.",
+        "Aplicação de lógica de programação em soluções práticas.",
+        "Elaboração de diagramas de casos de uso.",
+        "Trabalho em equipe na resolução de demandas.",
+        "Apoio em atividades técnicas e manutenção de sistemas.",
       ],
     },
     {
       company: "Alfasu",
       role: "Desenvolvedor",
-      location: "Anapolis - GO",
+      location: "Anápolis - GO",
       period: "Atual",
       description:
-        "Atuacao em software house com foco em solucoes SaaS e participacao nas rotinas de desenvolvimento do time.",
+        "Atuação em software house com foco em soluções SaaS e participação nas rotinas de desenvolvimento do time.",
       bullets: [
-        "Contato com desenvolvimento de solucoes SaaS em ambiente de software house.",
-        "Atuacao com NestJS e Angular como tecnologias principais do ecossistema.",
-        "Vivencia com manutencao, evolucao e sustentacao de sistemas.",
-        "Colaboracao com demandas tecnicas em equipe e adaptacao a contexto corporativo.",
+        "Contato com desenvolvimento de soluções SaaS em ambiente de software house.",
+        "Atuação com NestJS e Angular como tecnologias principais do ecossistema.",
+        "Vivência com manutenção, evolução e sustentação de sistemas.",
+        "Colaboração com demandas técnicas em equipe e adaptação a contexto corporativo.",
       ],
     },
   ],
@@ -107,17 +109,18 @@ export const profile = {
     period: "2023 - 2027",
     status: "Em andamento",
   },
-  languages: ["Ingles - Fluente"],
+  languages: ["Inglês - Fluente"],
   skillGroups: [
     {
-      title: "Tecnicas",
+      title: "Técnicas",
       items: [
         "JavaScript",
+        "React",
         "Node.js (NestJS)",
-        "Angular",
-        "Python",
         "PHP",
-        "Java Legado",
+        "Laravel",
+        "WhatsApp API",
+        "IA conversacional",
         "MySQL",
         "Docker",
         "HTML e CSS",
@@ -134,11 +137,11 @@ export const profile = {
       title: "Comportamentais",
       items: [
         "Trabalho em equipe",
-        "Comunicacao",
-        "Organizacao",
-        "Persistencia",
-        "Aprendizado continuo",
-        "Atencao aos detalhes",
+        "Comunicação",
+        "Organização",
+        "Persistência",
+        "Aprendizado contínuo",
+        "Atenção aos detalhes",
       ],
     },
   ],

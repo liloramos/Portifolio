@@ -39,7 +39,7 @@ function App() {
           <MotionSection className="panel panel-highlight" id="sobre">
             <SectionTitle
               eyebrow="Objetivo"
-              title="Um inicio profissional com direcao clara"
+              title="Um início profissional com direção clara"
             />
             <p>{profile.objective}</p>
             <p>{profile.about}</p>
@@ -49,7 +49,7 @@ function App() {
           <MotionSection className="panel">
             <SectionTitle
               eyebrow="Resumo"
-              title="Pontos fortes que ajudam a contar sua historia logo de cara"
+              title="Pontos fortes que ajudam a contar sua história logo de cara"
             />
 
             <div className="highlight-grid">
@@ -65,8 +65,8 @@ function App() {
           <MotionSection className="panel panel-grid">
             <div className="info-block">
               <SectionTitle
-                eyebrow="Experiencia"
-                title="Vivencia profissional"
+                eyebrow="Experiência"
+                title="Vivência profissional"
               />
 
               <div className="timeline">
@@ -91,7 +91,7 @@ function App() {
             </div>
 
             <div className="info-block">
-              <SectionTitle eyebrow="Formacao" title="Base academica" />
+              <SectionTitle eyebrow="Formação" title="Base acadêmica" />
               <article className="education-card">
                 <h3>{profile.education.course}</h3>
                 <p>{profile.education.institution}</p>
@@ -100,7 +100,7 @@ function App() {
                 </p>
               </article>
 
-              <SectionTitle eyebrow="Idiomas" title="Comunicacao" />
+              <SectionTitle eyebrow="Idiomas" title="Comunicação" />
               <div className="language-list">
                 {profile.languages.map((language) => (
                   <span className="info-chip language-chip" key={language}>

@@ -96,11 +96,11 @@ function Hero({ profile }) {
             transition={{ type: "spring", stiffness: 220, damping: 18 }}
             whileHover={{ y: -6, scale: 1.01 }}
           >
-            <p className="spotlight-label">Localizacao</p>
+            <p className="spotlight-label">Localização</p>
             <strong>{profile.location}</strong>
             <p className="spotlight-copy">
               Estudante de Engenharia de Software construindo uma carreira com
-              foco em back-end, aprendizado continuo e entregas consistentes.
+              foco em back-end, aprendizado contínuo e entregas consistentes.
             </p>
             <a className="hero-link" href="#projetos">
               Ver projetos em destaque
